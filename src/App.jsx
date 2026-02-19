@@ -6,6 +6,7 @@ import './App.css'
 import Navbar from "./Component/Home/Navbar"
 import HeroSection from "./Component/home/HeroSection"
 
+
 function App() {
 
 
