@@ -2,6 +2,7 @@ import React from "react"
 import './App.css'
 import Navbar from "./Component/Home/Navbar"
 import HeroSection from "./Component/home/HeroSection"
+import BookCard from "./Component/Home/BookCard"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
       <Navbar />
       <HeroSection/>
+      <BookCard/>
 
 
     </>
