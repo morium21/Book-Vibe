@@ -1,37 +1,38 @@
 import React from 'react'
 
-const books = [
-    {
-        id: 1,
-        title: "The Catcher in the Rye",
-        author: "J.D. Salinger",
-        category: "Fiction",
-        price: 8.00,
-        image:"pngwing 1.png",
-        tags: ["Young Adult", "Identity"]
-    }
 
-]
 
 
 
 const BookCard = () => {
     return (
 
-        <section>
-            <h1 className="text-center font-bold text-4xl my-10">Books</h1>
-           
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {books.map((book) => (
-                  <h1>{book.title}</h1>
-                ))}
+    
+
+        
+<section className="">
+
+ <h1 className="text-center font-bold text-4xl my-10">Books</h1>
+          {/* image */}
+        <div className="border border-gray-200 rounded-xl p-3 bg-white hover:shadow-md transition duration-300">
+
+            <div className="bg-gray-100 rounded-lg h-48 flex items-center">
+                <img 
+                src="Book Vibe/src/assets/book2.png" 
+                alt="book" 
+                className="h-40 object-contain"
+                />
             </div>
 
+            {/* Tags */}
+            <div className="flex gap-2 mt-4">
 
+            </div>
 
+        </div>
+</section>
 
-
-        </section>
+ 
                                                                                                        
 
 
@@ -41,3 +42,4 @@ const BookCard = () => {
 }
 
 export default BookCard
+
