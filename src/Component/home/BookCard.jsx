@@ -12,9 +12,9 @@ const BookCard = () => {
 
         <section className="">
 
-            <div>
+            {/* <div>
                 <h1 className="text-center font-bold text-4xl my-10">Books</h1>
-            </div>
+            </div> */}
 
             {/* Card-1 */}
             {/* image */}
@@ -22,7 +22,7 @@ const BookCard = () => {
 
                 <div className="bg-gray-100 rounded-lg h-48 flex items-center">
                     <img
-                        src="Book Vibe/src/assets/book2.png"
+                        src="/assets/book2.png"
                         alt="book"
                         className="h-40 object-contain"
                     />
