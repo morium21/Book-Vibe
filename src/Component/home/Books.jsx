@@ -1,5 +1,6 @@
 import React from 'react'
-import BookCard from '../Component/BookCard'
+import BookCard from './BookCard'
+
 
 const books = new Array(9).fill(null)
 

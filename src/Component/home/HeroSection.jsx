@@ -18,9 +18,9 @@ const HeroSection = () => {
 
 
             {/* Hero-Right */}
-          <div>
-              <img src="./pngwing 1.png" alt="pngwing" className="h-full " />
-          </div>
+            <div>
+                <img src="./pngwing 1.png" alt="pngwing" className="h-full " />
+            </div>
 
 
         </div>
