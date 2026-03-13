@@ -2,7 +2,7 @@ import React from 'react'
 import HeroSection from './HeroSection'
 import Navbar from './Navbar'
 import Books from './Books'
-import BookCard from './BookCard'
+
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <>
             <Navbar />
             <HeroSection />
-            <BookCard />
+          
             <Books/>
 
         </>
