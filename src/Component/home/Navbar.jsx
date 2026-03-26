@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -6,9 +7,10 @@ const Navbar = () => {
             <h1 className="font-bold text-xl">Book Vibe</h1>
 
             <ul className="flex gap-6 text-gray-600">
-                <li>Home</li>
-                <li>Listed Books</li>
-                <li>Pages to Read</li>
+                <li><NavLink to={"/"}>Home</NavLink></li>
+                <li><NavLink to={"/listed-books"}>Listed Books</NavLink></li>
+                <li><NavLink to={"/page-to-read"}>Pages to Read</NavLink></li>
+                
             </ul>
 
 

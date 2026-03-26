@@ -1,32 +1,22 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react"
 import './App.css'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  RouterProvider
+} from "react-router-dom";
 import Home from "./Component/home/Home"
-
-
+import { ListedBooks } from "./Component/listed-books/ListedBooks";
+import { router } from "./Route";
 
 function App() {
-
-
   return (
     <>
-    <Home/>
-    {/* <BrowserRouter>
-      <Routes>
- 
-        <Route path="/" element={<Home />}>
-          <Route index element={<About />} /> 
-            <Route path="about" element={<About />} /> 
-       
-        
-    
-      </Routes>
-    </BrowserRouter> */}
- 
-</>
-
-
-  )
+   <RouterProvider router={router}/>
+    </>
+  );
+  
 }
 
 export default App
