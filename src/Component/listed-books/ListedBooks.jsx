@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../home/Navbar'
+import { MapPin, Users, } from "lucide-react"
 
 const books = [
   {
@@ -44,28 +45,47 @@ export const ListedBooks = () => {
         {books.map((book) => (
           <div
             key={book.id}
-            className="flex gap-6 border rounded-xl p-4 shadow-sm"
+            className="border border-gray-300 rounded-2xl p-6 flex-col md:flex-row gap-6 bg-white "
           >
             <img
               src={book.img}
               alt={book.title}
-              className="w-24 h-32 object-cover rounded"
+              className="h- [180px] object-contain"
             />
             <div className="flex-1">
               <h3 className="font-semibold text-gray-800">
                 {book.title}
               </h3>
-              <p className="text-sm text-gray-500 mb-2">
+              <p className="text-sm text-gray-500 mb-6">
                 By : {book.author}
               </p>
 
-              <div className="flex flex-wrap gap-2 text-xs mb-3">
-                <span className="bg-green-100 text-green-600 px-2 py-1 rounded">
-                  Rating {book.Rating}
-                 </span>
-                 <span className="bg-blue-100 text-blue-600 px-2 py-1 rounded">
-                  Pages {book.pages}
-                 </span>
+              <div className="flex flex-wrap items-center gap-4 mb-5">
+                <span className="font-bold text-gray-800 text-xl">Tag</span>
+
+                {book.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="bg-green-100 text-green-600 px-5 py-2 rounded-full text-xl font-medium"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+
+                <div className="flex items-center gap-2 text-gray-600 text-xl mb-5">
+                  <div className="flex items-center gap-2">
+                    <MapPin size={22} />
+                    <span>Year of Publishing:  {book.year}</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-8 text-gray-600 text-xl mb-5">
+                  <div className="flex items-center gap-2">
+                    <Users size={22}/>
+                    <span>publisher: {book.publisher}</span>
+                  </div>
+
+                </div>
 
               </div>
 
