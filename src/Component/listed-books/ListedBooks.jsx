@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../home/Navbar'
-import { MapPin, Users, } from "lucide-react"
+import { FileText, MapPin, Users, } from "lucide-react"
 
 const books = [
   {
     id: 1,
     title: "The Great Gatsby",
     author: "Awlad Hossain",
-    image: "https://i.ibb.co.com/4fTnG7v/book1.png",
+    image: "",
     Rating: "4.5",
     category: "Classic",
     tags: ["Young Adult", "identity"],
@@ -16,6 +16,7 @@ const books = [
     pages: "180",
 
   },
+  
 ]
 
 export const ListedBooks = () => {
@@ -81,16 +82,36 @@ export const ListedBooks = () => {
 
                 <div className="flex flex-wrap gap-8 text-gray-600 text-xl mb-5">
                   <div className="flex items-center gap-2">
-                    <Users size={22}/>
+                    <Users size={22} />
                     <span>publisher: {book.publisher}</span>
                   </div>
 
+                  <div className="flex items-center gap-2">
+                    <FileText size={22} />
+                    <span>Page {book.pages}</span>
+                  </div>
                 </div>
 
+                <hr className="my-5 border-gray-300" />
+
+                <div className="flex flex-wrap gap-4">
+                  <button className="bg-blue-100 text-blue-500 px-6 py-3 rounded-full text-xl font-medium">
+                    Category: {book.category}
+                  </button>
+
+                  <button className="bg-orange-100 text-orange-500 px-6 py-3 rounded-full text-xl font-medium">
+                    Rating: {book.Rating}
+                  </button>
+
+                  <button className="bg-green-500 hover:bg-green-600 transition text-white px-8 py-3 rounded-full text-2xl font-medium">
+                    View Details
+
+                  </button>
+
+                </div>
+
+
               </div>
-
-
-
             </div>
           </div>
 
