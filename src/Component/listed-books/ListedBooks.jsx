@@ -16,6 +16,20 @@ const books = [
     pages: "180",
 
   },
+    {
+    id: 1,
+    title: "The Catcher in the Rye",
+    author: "Awlad Hossain",
+    image: "",
+    Rating: "4.5",
+    category: "Classic",
+    tags: ["Young Adult", "identity"],
+    publisher: "Scribner",
+    year: "1924",
+    pages: "180",
+
+  },
+
 
 
 
