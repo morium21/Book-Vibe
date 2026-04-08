@@ -4,7 +4,8 @@ import BookCard from './BookCard'
 
 const books = new Array(9).fill(null)
 
-const Books = () => {
+const Books = ({data}) => {
+    console.log(data, 'd')
 
     return (
         <div className="px-10 py-14">
@@ -14,8 +15,8 @@ const Books = () => {
             </h2>
             <div className="grid grid-cols-3 gap-8">
 
-                {books.map((book, index) => (
-                    <BookCard key={index} />
+                {data.slice(0,9).map((book, index) => (
+                    <BookCard key={index} array={book} />
                 ))}
 
             </div>

@@ -1,12 +1,13 @@
 import React from 'react'
-const BookCard = () => {
+const BookCard = ({array}) => {
+  console.log(array)
   return (
 
     <div className="border border-gray-200 rounded-xl p-3 bg-white hover:shadow-md transition duration-300">
 
       <div className="bg-gray-100 rounded-lg h-48 flex items-center">
         <img
-          src="/assets/book2.png"
+          src={array.thumbnail}
           alt="book"
           className="h-40 object-contain"
         />
@@ -20,7 +21,7 @@ const BookCard = () => {
         </span>
       </div>
       <h3 className="font-semibold text-lg mt-3">
-        The Catcher  in the Rye
+        {array.title}
       </h3>
       <p className="text-sm text-gray-400 mt-1">
         By : Authore Name
