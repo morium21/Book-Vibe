@@ -13,7 +13,7 @@ const Books = ({data}) => {
                 Books
 
             </h2>
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
 
                 {data.slice(0,9).map((book, index) => (
                     <BookCard key={index} array={book} />

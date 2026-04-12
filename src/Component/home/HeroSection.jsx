@@ -5,7 +5,7 @@ const HeroSection = () => {
 
         //  Hero-Left
 
-        <div className="bg-gray-100 mx-10 rounded-xl p-14 flex justify-between items-center gap-2">
+        <div className="bg-gray-100 mx-4 md:mx-10 rounded-xl p-6 md:p-14 flex flex-col md:flex-row justify-between items-center gap-2">
             <div>
                 <h1 className="text-4xl font-bold mb-6">
                     Books to freshen up <br /> your bookshelf
@@ -18,7 +18,7 @@ const HeroSection = () => {
 
 
             {/* Hero-Right */}
-            <div>
+            <div  className="flex justify-center">
                 <img src="./pngwing 1.png" alt="pngwing" className="h-full " />
             </div>
 

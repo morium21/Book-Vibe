@@ -45,20 +45,20 @@ export const PageToRead = () => {
   return (
     <>
       <Navbar />
-          <div className="max-w-6xl mx-auto px-4 py-10">
-            <div className="bg-gray-100 rounded-3xl p-10 h-[600px]">
+          <div className="max-w-6xl mx-auto px-4 py-6 md:py-10">
+            <div className="bg-gray-100 rounded-2xl p-4 md:p-10 h-[300px] sm:h-[400px] md:h-[500px]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               data={data}
-              margin={{ top: 40, right: 30, left: 20, bottom: 50 }}
+              margin={{ top: 20, right: 10, left: 0, bottom: 30 }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+              <XAxis dataKey="name" tick={{ fontSize: 5 }} />
               <YAxis domain={[0, 340]} ticks={[0, 85, 170, 255, 340]} />
               <Bar
                 dataKey="pages"
                 shape={<TriangleBar />}
-                label={{ position: "top", fontSize: 14, fontWeight: "bold" }}
+                label={{ position: "top", fontSize: 5, fontWeight: "bold" }}
               >
                 {data.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={colors[index]} />
@@ -74,3 +74,4 @@ export const PageToRead = () => {
     </>
   )
 }
+export default PageToRead
